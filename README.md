@@ -1,6 +1,6 @@
 # Board Game Concierge: Answering Questions for Complex Board Games
 ## Fine-tuning DistilBERT Question-Answering on an unsupervised, small-domain corpus.
-In the realm of complex board games, rules questions abound. A tool that simply answers a player's rules questions would be helpful. An NLP solution applied to this problem may be able to take advantage of a special circumstance of this realm: Questions themselves will only be asked of the exact text corpus that the fine-tuned model would be trained on. Thus, overfitting on the training corpus is good.
+In the realm of complex board games, rules questions abound. A tool that simply answers a player's rules questions would be helpful. An NLP solution applied to this problem may be able to take advantage of a special circumstance of this realm to avoid labeling game rules for the question-answering task --> Questions themselves will only be asked of the exact text corpus that the fine-tuned model would be trained on. And, thusly, overfitting on the training corpus is good.
 ## Overview
 This notebook presents the preprocessing, training, and inference algorithm of the Board Game Concierge reference aid. We demonstrate it with the 25k+-word game rules of the complex board game High Frontier 4 All (base game). 
 > High Frontier 4 All Core Rules   

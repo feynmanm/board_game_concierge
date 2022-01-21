@@ -10,3 +10,5 @@ Lead Designer: Phil Eklund
 We utilize our own flavor of domain adaptation so that the rules need not be labelled. The key is fine tuning the contextualized representation of the English language of the well-known vanilla DistilBERT model on our game rules corpus, then freezing the early encoders, and then retraining the model for question answering on the off-the-shelf SQuAD v1 corpus. The resulting QA model contains particular knowledge of the game rules while being fully trained to process English-language questions.
 
 During inference, the user asks a question. we utilize staCy to identify appropriate passages from the game rules that might contain an answer to the question, then ask the question of each such passage, and return the answer(s) with the highest confidence scores. spaCy also plays an interesting role in addressing some preprocessing challenges specific to the rules of High Frontier 4 All.
+## Navigating this Project
+bg_concierge.ipynb contains all the code and a narrative of our process.
